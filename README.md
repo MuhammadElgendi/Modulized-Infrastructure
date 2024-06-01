@@ -6,6 +6,9 @@
 ```bash
   Git clone https://github.com/MuhammadElgendi/Modulized-Infrastructure-Vodafone-Task-.git
 ```
+### you can see the modules dir arch in  file 
+![DIR-ARCH](https://img.shields.io/badge/DIR--ARCH-red)
+
 
 
 
