@@ -1,0 +1,39 @@
+The Architecture of the Modules Directories
+
+terraform/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── Credentials.tfvars
+├── vpc/
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── ec2/    "Has the configuration files for ec2 Module "
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── rds/    "Has the configuration files for PostgreSQL RDS Module"    
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── security_groups/    "Has the configuration files for security Groups for the limmitation traffic for ec2 and rds Module"
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── iam/    "Has the configuration files for Profile permission for the ec2 for accessing the s3 bucket and s3"
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── route53/    "Has the configuration files for route53 and loadbalancer for accessing the webapp instance "
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── lambda/ "Has the configuration files for Lambda function that interacts with the RDS PostgreSQL database."
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+└── api_gateway/
+    ├── main.tf
+    ├── variables.tf
+    └── outputs.tf
